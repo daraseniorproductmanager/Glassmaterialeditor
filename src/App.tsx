@@ -15,6 +15,26 @@ import {
   ChevronRight,
   Mail,
   MessageCircle,
+  BarChart3,
+  Zap,
+  Lock,
+  TrendingUp,
+  Smartphone,
+  Shield,
+  Dice6,
+  Trophy,
+  CreditCard,
+  Bitcoin,
+  Settings,
+  Palette,
+  Laptop,
+  Share2,
+  MessageCircle,
+  HelpCircle,
+  Rocket,
+  Sparkles,
+  DollarSign,
+  Users,
   Send
 } from 'lucide-react';
 import {
@@ -153,8 +173,14 @@ export default function App() {
                   size="lg" 
                   className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white px-10 py-6 rounded-full shadow-lg shadow-cyan-500/50"
                 >
+                  <a 
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSdrS_05qDPopOy--sjD4OxOsgPsxSm8aODLR29ctgaRUxLstw/viewform" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                   >
                   همین حالا شروع کنید
-                  <Rocket className="mr-2 w-5 h-5" />
+                  
+                  </a> 
                 </Button>
               </motion.div>
             </motion.div>
@@ -395,14 +421,20 @@ export default function App() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <Card className="bg-gradient-to-br from-gray-900 to-gray-800 border-gray-700 p-8 h-full hover:scale-105 transition-transform duration-300">
-                    <div className="flex items-start gap-4 mb-4">
-                      <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${item.gradient} flex items-center justify-center flex-shrink-0`}>
-                        <item.icon className="w-7 h-7 text-white" />
-                      </div>
-                      <h3 className="text-xl font-semibold mt-1 text-white">{item.title}</h3>
-                    </div>
-                    <p className="text-gray-400 leading-relaxed">{item.description}</p>
-                  </Card>
+  <div dir="rtl" className="text-right" style={{ unicodeBidi: 'isolate-override' }}>
+    <div className="flex items-start gap-4 mb-4">
+      <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${item.gradient} flex items-center justify-center flex-shrink-0`}>
+        <item.icon className="w-7 h-7 text-white" />
+      </div>
+      <h3 className="text-xl font-semibold mt-1 text-white">{item.title}</h3>
+    </div>
+
+    <p className="text-gray-400 leading-relaxed">
+      {item.description}
+    </p>
+  </div>
+</Card>
+
                 </motion.div>
               ))
             }
@@ -447,8 +479,13 @@ export default function App() {
                   size="lg" 
                   className="bg-white text-purple-600 hover:bg-gray-100 px-10 py-6 rounded-full"
                 >
+                  <a 
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdrS_05qDPopOy--sjD4OxOsgPsxSm8aODLR29ctgaRUxLstw/viewform" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
                   درخواست پنل
-                  <Rocket className="mr-2 w-5 h-5" />
+                  </a>
                 </Button>
               </motion.div>
             </div>
@@ -466,7 +503,7 @@ export default function App() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl mb-4 bg-gradient-to-l from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-              تجربه کاربران موفق
+              تجربه کاربران 
             </h2>
           </motion.div>
 
@@ -707,7 +744,7 @@ export default function App() {
             <p className="text-gray-500 mb-6">اگر به دنبال ورود حرفه‌ای به دنیای سرگرمی آنلاین و کسب درآمد دلاری هستید، بت‌پنل مسیر آماده شماست.</p>
             <p className="text-gray-500 mb-6">© 2025 بت‌پنل — تمامی حقوق محفوظ است.</p>
             <div className="flex items-center justify-center gap-6">
-              {['LinkedIn', 'Instagram', 'Telegram'].map((social, index) => (
+              {/*['LinkedIn', 'Instagram', 'Telegram'].map((social, index) => (
                 <motion.a
                   key={index}
                   href="#"
@@ -717,7 +754,7 @@ export default function App() {
                 >
                   <span className="text-white text-sm">{social[0]}</span>
                 </motion.a>
-              ))}
+              ))*/}
             </div>
           </div>
         </div>
